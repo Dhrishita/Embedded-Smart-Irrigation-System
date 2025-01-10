@@ -132,8 +132,8 @@ To set up and run the Smart Irrigation System, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Smart-Irrigation-System.git
-   cd Smart-Irrigation-System
+   git clone https://github.com/Dhrishita/Embedded-Smart-Irrigation-System.git
+   cd Embedded-Smart-Irrigation-System
 
 2. Install Arduino IDE:
 
