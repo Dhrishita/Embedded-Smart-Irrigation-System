@@ -1,12 +1,3 @@
-/* Connections
-Relay. D3
-Btn.   D7
-Soil.  A0
-PIR.   D5
-SDA.   D2
-SCL.   D1
-Temp.  D4
-*/
 #define BLYNK_TEMPLATE_ID "TMPL3n_cZNxcz"
 #define BLYNK_TEMPLATE_NAME "Smart Irrigation System"
 #include <LiquidCrystal_I2C.h>
