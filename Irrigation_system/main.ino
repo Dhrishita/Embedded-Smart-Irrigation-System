@@ -9,7 +9,7 @@
 LiquidCrystal_I2C lcd(0x3F, 16, 2);
 char auth[] = "zbRcOvZBwT54KdbZuXYElYSWpZpYgI9n";  
 char ssid[] = "DHRISHITA1";  
-char pass[] = "dhrishita@$051805";  
+char pass[] = " ";  
 
 DHT11 dht11(D4); //D4 DHT11 Temperature Sensor
 BlynkTimer timer;
