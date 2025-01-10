@@ -55,6 +55,7 @@ This system provides a scalable solution for urban gardens, farms, or home garde
    
 <img width="1428" alt="Screenshot 2025-01-10 at 4 13 23 PM" src="https://github.com/user-attachments/assets/9997fba8-fc81-4ad6-b64d-83ff5d5b024e" />
 
+
 2. Web Dashboard
 
 <img width="1428" alt="Screenshot 2025-01-10 at 4 21 40 PM" src="https://github.com/user-attachments/assets/92a9d31f-6c31-44ba-91f3-e301c99d760d" />
@@ -93,7 +94,7 @@ To set up the NodeMCU with the various sensors and modules, make the following c
 |--------------|-------------------|
 | VCC          | 3V3               |
 | GND          | GND               |
-| IN           | D1 (GPIO 5)       |
+| IN           | D3 (GPIO 0)       |
 | NO           | Water Pump +ve    |
 | COM          | Battery +ve       |
 
@@ -105,13 +106,13 @@ To set up the NodeMCU with the various sensors and modules, make the following c
 | SDA          | D2 (GPIO 4)   |
 | SCL          | D1 (GPIO 5)   |
 
-## Motor ON/OFF Button
+### Motor ON/OFF Button
 | Pin              | Connected to  |
 |------------------|---------------|
 | One Terminal     | D7            |
 | Other Terminal   | GND           |
 
-## Water Pump
+### Water Pump
 | Pin  | Connected to          |
 |------|-----------------------|
 | +ve  | NO (Relay)            |
