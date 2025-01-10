@@ -11,6 +11,7 @@ The Smart Irrigation System is designed to automate the process of watering plan
 - [Features](#features)
 - [Components Required](#components-required)
 - [Circuit Diagram](#circuit-diagram)
+- [Blynk App Configuration](#blynk-app-configuration)
 - [Connecting NodeMCU with Sensors](#connecting-nodemcu-with-sensors)
 - [Working of Project](#working-of-project)
 - [Installation](#installation)
@@ -46,9 +47,23 @@ This system provides a scalable solution for urban gardens, farms, or home garde
 
 ## Circuit Diagram
 
-![circuit](https://github.com/user-attachments/assets/your-image-path)
+<img width="934" alt="Screenshot 2025-01-10 at 4 01 39 PM" src="https://github.com/user-attachments/assets/b2ed5c37-3a5c-42db-a34e-508254c1606a" />
+
+## Blynk App Configuration
+
+1. Datastreams
+   
+<img width="1428" alt="Screenshot 2025-01-10 at 4 13 23 PM" src="https://github.com/user-attachments/assets/9997fba8-fc81-4ad6-b64d-83ff5d5b024e" />
+
+2. Web Dashboard
+
+<img width="1428" alt="Screenshot 2025-01-10 at 4 21 40 PM" src="https://github.com/user-attachments/assets/92a9d31f-6c31-44ba-91f3-e301c99d760d" />
+
 
 ## Connecting NodeMCU with Sensors
+
+![NodeMCU GPIO](https://github.com/user-attachments/assets/bc214746-c246-4fc5-b344-e44591dfd7ac)
+
 
 To set up the NodeMCU with the various sensors and modules, make the following connections:
 
@@ -74,11 +89,13 @@ To set up the NodeMCU with the various sensors and modules, make the following c
 | OUT          | D5 (GPIO 14)  |
 
 ### Relay Module (Water Pump Control):
-| Relay Pins   | NodeMCU Pins  |
-|--------------|---------------|
-| VCC          | 3V3           |
-| GND          | GND           |
-| IN           | D6 (GPIO 12)  |
+| Relay Pins   | NodeMCU Pins      |
+|--------------|-------------------|
+| VCC          | 3V3               |
+| GND          | GND               |
+| IN           | D1 (GPIO 5)       |
+| NO           | Water Pump +ve    |
+| COM          | Battery +ve       |
 
 ### I2C LCD Display:
 | LCD Pins     | NodeMCU Pins  |
@@ -87,6 +104,18 @@ To set up the NodeMCU with the various sensors and modules, make the following c
 | GND          | GND           |
 | SDA          | D2 (GPIO 4)   |
 | SCL          | D1 (GPIO 5)   |
+
+## Motor ON/OFF Button
+| Pin              | Connected to  |
+|------------------|---------------|
+| One Terminal     | D7            |
+| Other Terminal   | GND           |
+
+## Water Pump
+| Pin  | Connected to          |
+|------|-----------------------|
+| +ve  | NO (Relay)            |
+| -ve  | Battery -ve           |
 
 ## Working of Project
 
@@ -105,3 +134,26 @@ To set up and run the Smart Irrigation System, follow these steps:
    git clone https://github.com/yourusername/Smart-Irrigation-System.git
    cd Smart-Irrigation-System
 
+2. Install Arduino IDE:
+
+- Download and install the Arduino IDE.
+
+3. Install Required Libraries:
+
+- Open the Arduino IDE.
+- Go to **'Sketch'** > **'Include Library'** > **'Manage Libraries'**.
+- Search for and install the following libraries:
+  - **DHT11 sensor library** (for DHT11)
+  - **ESP8266WiFi** (for WiFi connectivity)
+  - **LiquidCrystal_I2C** (for LCD display)
+  - **BlynkSimpleEsp8266** (for remote control)
+  
+4. Upload Code to NodeMCU:
+
+- Connect your NodeMCU to your computer using a USB cable.
+- Select the correct board (NodeMCU 1.0) and port from **'Tools'** > **'Board'** and **'Tools'** > **'Port'**.
+- Click on the **'Upload'** button to upload the code to the NodeMCU.
+   
+## Contact
+If you have any questions or suggestions, feel free to open an issue or contact:
+Dhrishita Parve: dhrishitap18@gmail.com
