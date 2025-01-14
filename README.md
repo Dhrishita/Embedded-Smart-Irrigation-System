@@ -1,9 +1,6 @@
 # Embedded-Smart-Irrigation-System
-This project is a Smart Irrigation System using an ESP8266 microcontroller. It integrates multiple sensors and an LCD display to monitor and control irrigation automatically. The system uses Blynk for IoT control and monitoring, allowing users to receive updates and manage the irrigation system remotely.
 
-# Smart Irrigation System
-
-The Smart Irrigation System is designed to automate the process of watering plants based on soil moisture levels. By utilizing sensors and IoT technologies like the ESP8266, this system provides efficient water usage by activating the water pump when necessary. The system also monitors environmental conditions such as temperature and humidity, and it can be controlled remotely via the Blynk app.
+The Smart Irrigation System is designed to automate the process of watering plants based on soil moisture levels. By utilizing sensors and IoT technologies like the ESP8266, this system provides efficient water usage by activating the water pump when necessary. The system also uses Blynk App to monitor environmental conditions such as temperature and humidity, allowing users to receive updates and manage the irrigation system remotely.
 
 ## Table of Contents
 
